@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Code, Github, Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,8 +32,8 @@ export const Header = () => {
               GitHub
             </Button>
             
-            <Button className="btn-hero text-sm px-4 py-2">
-              Try Free
+            <Button asChild className="btn-hero text-sm px-4 py-2">
+              <Link to="/studio">Try Free</Link>
             </Button>
 
             {/* Mobile menu button */}
